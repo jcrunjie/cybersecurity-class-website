@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+/*the body*/
+body {
+    background-color: #231F20;
+    overflow-x: hidden;
+}
+
+/* container for the main content of the page */
+.container1 {
+    font-family: "Roboto", sans-serif;
+    margin: 30px;
+}
+
+
+
+/* the about us heading */
+h1 {
+    font-weight: 400;
+}
+
+/* the about us paragraph */
+p {
+    font-weight: 100;
+
+}
+
+
+
+#logo {
+    width: 25px;
+}
+
+.courses {
+    padding-left: 30px;
+}
+
+.credits {
+    padding-left: 60px;
+}
+
+.creditLinks {
+    padding-left: 60px;
+    line-height: 30px;
+}

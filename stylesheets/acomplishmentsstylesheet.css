@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+/*the body*/
+body {
+    background-color: #231F20;
+    overflow-x: hidden;
+}
+
+/* container for the main content of the page */
+.container1 {
+    font-family: "Roboto", sans-serif;
+    margin: 30px;
+}
+
+.people {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.pfp img{
+    padding-right: 15px;
+    float: left;
+    width: 85px;
+}
+
+.pfp {
+        margin: 50px 50px  50px  0;
+}

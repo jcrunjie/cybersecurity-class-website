@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Cybersecurity Class Website</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css for the rest of the page-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/overallstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/presentation.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/sidebar.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+    <!-- this makes every link open to another page -->
+    <base target="_blank">
+
+</head>
+
+<body background-color="#231F20">
+
+
+    <!-- navigation bar -->
+    <div class="nav">
+        <ul>
+            <li><a target="_self" class="active" href="index.html" style="padding: 10px 10px 8px 10px"><img id="logo" src="Icon.png"> </a></li>
+            <li><a target="_self" class="active" href="presentation.html">Presentation</a></li>
+        </ul>
+    </div>
+
+    <!-- side bar -->
+    <div id="mySidebar" class="sidebar">
+        <a target="_self" href="#summary">Summary</a>
+        <a target="_self" href="#objectives">A+ Objectives</a>
+        <a target="_self" href="#materials">Materials</a>
+        <a target="_self" href="#obstacles">Obstacles</a>
+        <a target="_self" href="#future">Future Plans</a>
+        <a target="_self" href="#references">References</a>
+
+    </div>
+
+    <div class="topLine">....</div>
+    <button class="openbtn" id="button">☰</button>
+    <div class="container1" id="main">
+
+
+        <!-- page content -->
+
+
+        <p class="slide" style="margin: 100px 200px 200px 200px;">M Cybersecurity Website</p>
+
+        <div style="height: 1000px"></div>
+
+        <p class="slide" id="summary"> What is the Problem?</p>
+        <h1>We are not as known as the other programs in the Academies</h1>
+        <p><img src="unknown.jpg"></p>
+
+
+        <div style="height: 1000px"></div>
+
+
+        <p class="slide">What is Our Solution?</p>
+        <h1>Create a Class Website</h1>
+        <p><img src="Website.jpg"></p>
+
+
+        <div style="height: 1000px"></div>
+
+
+        <p class="slide">What are the expected Results?</p>
+        <h1>1. Attract more opportunities</h1>
+        <h1>2. Attract potential students and sponsors</h1>
+        <p><img src="students.png" width="700px"></p>
+
+
+        <div style="height: 500px"></div>
+
+        <a href="index.html"><img src="Icon.png" width="200px"></a>
+
+        <div style="height: 500px"></div>
+
+
+        <p class="slide" id="objectives"> A+ Objectives</p>
+        <h1>902 - 4.2 Given a scenario, troubleshoot common PC security issues with appropriate tools and best practices.</h1>
+        <h1>902 - 2.4 Summarize the properties and purpose of services provided by networked hosts</h1>
+        <p><img src="hosting.jpg" width="700px"></p>
+
+
+        <div style="height: 1000px"></div>
+
+        <p class="slide" id="materials">Materials</p>
+        <h1>Computer</h1>
+        <h1>Brackets Text Editor</h1>
+        <h1>HTML & CSS</h1>
+        <h1>JavaScript</h1>
+        <h1>git</h1>
+        <p style="float: left; position: relative; margin: 50px 50px 50px 0"><img src="brackets.png" width="200px"></p>
+        <p style="float: right; inherit; position: relative; margin: 50px 0 50px 50px"><img src="html.png" width="200px"></p>
+        <p style="float: left; position: relative"><img src="js.png" width="200px"></p>
+        <p style="float: right; position: relative; margin: 50px 0 50px 50px"><img src="git.png" width="200px"></p>
+
+        <div style="height: 1000px"></div>
+
+
+        <p class="slide" id="obstacles"> Obstacles</p>
+        <h1>Indecisive on Ideas</h1>
+        <h2>1. Robot Mailman</h2>
+        <h2>2. RFID Inventory</h2>
+        <p><img src="decision.gif" width="700px"></p>
+
+        <div style="height: 500px"></div>
+
+        <h1>Stupid Sidebar!!!!!!!</h1>
+        <p><img src="sidebar.gif" width="700px"></p>
+
+        <div style="height: 1000px"></div>
+
+        <div style="height: 1000px"></div>
+
+        <p class="slide" id="future"> Future Plans</p>
+        <h1>Host the website on LCPS Blog</h1>
+        <span>
+            <a href="https://blogs.lcps.org/matacyber/">
+                https://blogs.lcps.org/matacyber/
+            </a>
+        </span>
+        <p><img src="blogQrCode.png" width="400px"></p>
+        <div style="height: 400px"></div>
+        <h1>Update the Student Accomplishment page with student projects from this year</h1>
+        <div style="height: 400px"></div>
+        <h1>Update the FAQ page with input from you all</h1>
+        <p><img src="faqQrCode.png" width="400px"></p>
+
+
+        <div style="height: 1000px"></div>
+
+
+
+        <p class="slide" id="references"> References</p>
+        <h1>Dorfman, J., & Mervine, J. (n.d.). Bootstrapcdn. Retrieved from https://www.bootstrapcdn.com/</h1>
+        <h1>HTML. (n.d.). Retrieved from https://www.w3schools.com/</h1>
+        <h1>HTML Color Codes. (2015, September 03). Retrieved from https://htmlcolorcodes.com/</h1>
+        <h1>Otto, M., & Thornton, J. (n.d.). Bootstrap. Retrieved from https://getbootstrap.com/</h1>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <p id="footer">Coded by Arienbelle &amp; Jessica - <a target="_self" href="mailto:jeremy.staples@lcps.org">Contact Us</a> - All Rights Reserved</p>
+    </footer>
+
+
+    <script>
+        document.getElementById("button").addEventListener("click", open_close);
+        var menuState = 0 // close
+        function open_close() {
+            if (menuState === 0) {
+                openNav();
+            } else {
+                closeNav();
+            }
+            console.log(menuState);
+        }
+
+        function openNav() {
+            menuState = 1;
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "280px";
+            document.getElementById("button").style.marginLeft = "250px";
+            document.getElementById("button").innerHTML = "×";
+        }
+
+        function closeNav() {
+            menuState = 0;
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "200px";
+            document.getElementById("button").style.marginLeft = "0";
+            document.getElementById("button").innerHTML = "☰";
+        }
+
+    </script>
+</body>
+
+</html>

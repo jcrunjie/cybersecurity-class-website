@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+    padding-top: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+#sidebar {
+    background-color: #4EBDE5;
+    padding-bottom: 10%;
+    width: 200px;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+.sidebarLiA {
+    background-color: #4EBDE5;
+    color: #EFEFEF;
+    display: block;
+    width: 180px;
+    padding: 10px;
+    text-decoration: none;
+    position: center;
+}
+

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+/*the body*/
+body {
+    background-color: #231F20;
+    color: #FEFEFE;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+
+/* DONT REMOVE, THIS IS FOR THE FOOTER APPARENTLY */
+body::after {
+    content: '';
+    display: block;
+    height: 50px;
+    /* Set same as footer's height */
+}
+
+.topLine {
+    background-color: #6CCEED;
+    color: #231F20;
+    height: 2px;
+}
+
+/* the style for each big heading */
+#title {
+    font-size: 70px;
+    font-weight: 100;
+    text-align: center;
+    margin: 30px;
+}
+
+/*footer*/
+#footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #797D7F;
+    text-align: center;
+    font-size: 10px;
+    background-color: transparent;
+    font-weight: 100;
+    position: absolute;
+    height: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #797D7F;
+}
+
+footer p a:hover {
+    color: #6CCEED;
+}
+
+p {
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #F2F3F4;
+    font-size: 15px;
+}
+
+span a{
+        color: #6CCEED;
+}
+
+span a:link {
+    color: #6CCEED;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+span a:visited {
+    color: #6CCEED;
+    text-decoration: none;
+}
+
+/* mouse over link */
+span a:hover {
+
+    color: hotpink;
+}
+
+
+/*position of the nav bar and color*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #231F20;
+
+}
+
+/*how the nav bar is floating*/
+li {
+    float: right;
+}
+
+/*how the nav bar is colored and stuff*/
+li a {
+    display: block;
+    color: #FEFEFE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "roboto", sans-serif;
+}
+
+/*hover background color*/
+li a:hover {
+    background-color: #6CCEED;
+}
+
+#logo {
+    width: 25px;
+}
+
+/* Oppa Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #6CCEED;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #EFEFEF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #231F20;
+}
+
+
+
+.openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding-left: 10px;
+    margin-top: -45px;
+    position: fixed;
+    transition: margin-left .5s;
+    border: none;
+    text-decoration: none;
+    outline-style: none;
+}
+
+.openbtn:hover {
+    color: #6CCEED;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+On smaller screens,
+where height is less than 450px,
+change the style of the sidenav (less padding and a smaller font size) @media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+
+    /* end of Sidebar styles */

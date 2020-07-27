@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Cybersecurity Class Website</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css for the rest of the page-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/overallstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/faqstylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/sidebar.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+    <!-- this makes every link open to another page -->
+    <base target="_blank">
+
+</head>
+
+<body background-color="#231F20">
+
+
+    <!-- navigation bar -->
+    <div class="nav">
+        <ul>
+            <li><a target="_self" class="active" href="index.html" style="padding: 10px 10px 8px 10px"><img id="logo" src="Icon.png"> </a></li>
+            <li><a target="_self" class="active" href="aboutUs.html">About Us</a></li>
+            <li><a target="_self" class="active" href="cyberPatriot.html">CyberPatriot</a></li>
+            <li><a target="_self" class="active" href="acomplishments.html">Student Accomplishments</a></li>
+            <li><a target="_self" class="active" href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+
+    <!-- side bar -->
+    <div id="mySidebar" class="sidebar">
+        <a target="_self" href="#">About</a>
+        <a target="_self" href="#">Services</a>
+        <a target="_self" href="#">Clients</a>
+        <a target="_self" href="#">Contact</a>
+    </div>
+
+    <div class="topLine">....</div>
+    <!-- Page Content -->
+    <button class="openbtn" id="button">☰</button>
+    <div class="container1" id="main">
+        <h1> Frequently Asked Questions</h1>
+        <h3>What Does Your Class Do?</h3>
+        <p>
+            <h4>First Year</h4>
+            <p> We focus on getting our A+ certification, building our Build Machines, creating our own ethernet cables, </p>
+            <h4>Second Year</h4>
+        </p>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer">
+        <p id="footer">Coded by Jessi &amp; Arienbelle - <a target="_self" href="mailto:jeremy.staples@lcps.org">Contact Us</a> - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById("button").addEventListener("click", open_close);
+        var menuState = 0 // close
+        function open_close() {
+            if (menuState === 0) {
+                openNav();
+            } else {
+                closeNav();
+            }
+            console.log(menuState);
+        }
+
+        function openNav() {
+            menuState = 1;
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "280px";
+            document.getElementById("button").style.marginLeft = "250px";
+            document.getElementById("button").innerHTML = "×";
+        }
+
+        function closeNav() {
+            menuState = 0;
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "30px";
+            document.getElementById("button").style.marginLeft = "0";
+            document.getElementById("button").innerHTML = "☰";
+        }
+    </script>
+
+</body>
+
+</html>
